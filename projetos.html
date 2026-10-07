@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça os projetos sociais da ONG Mãos que Ajudam e saiba como participar.">
+  <title>Projetos | ONG Mãos que Ajudam</title>
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <script src="js/menu.js" defer></script>
+  <script src="js/feedback.js" defer></script>
+</head>
+<body>
+
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="index.html">
+        <picture>
+          <source srcset="imagens/logo.svg" type="image/svg+xml">
+          <img src="imagens/logo.png" alt="" width="80" height="80">
+        </picture>
+        ONG Mãos que Ajudam
+      </a>
+
+      <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="botao-menu-icone" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <nav id="menu-principal" class="menu" aria-label="Navegação principal">
+        <ul class="menu-lista">
+          <li><a class="menu-link" href="index.html">Início</a></li>
+          <li class="menu-item-com-submenu">
+            <a class="menu-link" href="projetos.html" aria-current="page">Projetos</a>
+            <ul class="submenu">
+              <li><a href="projetos.html#projeto-educacao">Aprender Juntos</a></li>
+              <li><a href="projetos.html#projeto-alimentacao">Mesa Solidária</a></li>
+              <li><a href="projetos.html#voluntariado">Seja voluntário</a></li>
+              <li><a href="projetos.html#doacoes">Faça uma doação</a></li>
+            </ul>
+          </li>
+          <li><a class="menu-link" href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <div class="hero">
+      <div class="container">
+        <h1>Nossos projetos sociais</h1>
+        <p>
+          Cada projeto nasce de uma necessidade real da comunidade e é mantido com o apoio
+          de voluntários e doadores. Conheça as iniciativas em andamento.
+        </p>
+      </div>
+    </div>
+
+    <!-- Cada projeto é um <article> em formato de cartão -->
+    <section id="projetos-ativos" class="secao">
+      <div class="container">
+        <h2 class="secao-titulo">Projetos em andamento</h2>
+
+        <div class="grid">
+          <article id="projeto-educacao" class="col-md-6 card">
+            <figure class="card-imagem">
+              <!-- <picture>: o navegador usa o primeiro formato que suportar; o <img> em JPG é o fallback -->
+              <picture>
+                <source srcset="imagens/projeto-educacao.svg" type="image/svg+xml">
+                <source srcset="imagens/projeto-educacao.webp" type="image/webp">
+                <img src="imagens/projeto-educacao.jpg" alt="Ilustração de livros abertos" width="400" height="240">
+              </picture>
+              <figcaption>Aulas de reforço escolar no contraturno.</figcaption>
+            </figure>
+            <div class="card-corpo">
+              <h3>Aprender Juntos</h3>
+              <ul class="tags" aria-label="Categorias">
+                <li class="tag">Educação</li>
+                <li class="tag">6 a 14 anos</li>
+              </ul>
+              <p>
+                Reforço escolar gratuito em português e matemática para crianças de 6 a 14 anos,
+                com acompanhamento individual e oficinas de leitura.
+              </p>
+
+              <h4>Como participar</h4>
+              <ul>
+                <li>Seja voluntário como educador(a) ou monitor(a)</li>
+                <li>Doe livros e material escolar</li>
+              </ul>
+            </div>
+            <div class="card-rodape">
+              <span class="badge badge-aviso">Precisa de voluntários</span>
+              <a class="botao botao-primario" href="cadastro.html">Participar</a>
+            </div>
+          </article>
+
+          <article id="projeto-alimentacao" class="col-md-6 card">
+            <figure class="card-imagem">
+              <picture>
+                <source srcset="imagens/projeto-alimentacao.svg" type="image/svg+xml">
+                <source srcset="imagens/projeto-alimentacao.webp" type="image/webp">
+                <img src="imagens/projeto-alimentacao.jpg" alt="Ilustração de uma tigela com alimentos" width="400" height="240">
+              </picture>
+              <figcaption>Distribuição mensal de cestas básicas.</figcaption>
+            </figure>
+            <div class="card-corpo">
+              <h3>Mesa Solidária</h3>
+              <ul class="tags" aria-label="Categorias">
+                <li class="tag">Alimentação</li>
+                <li class="tag">Famílias</li>
+              </ul>
+              <p>
+                Arrecadação e distribuição de cestas básicas e refeições para famílias em
+                situação de vulnerabilidade, em parceria com mercados do bairro.
+              </p>
+
+              <h4>Como participar</h4>
+              <ul>
+                <li>Ajude na triagem e montagem das cestas</li>
+                <li>Doe alimentos não perecíveis</li>
+              </ul>
+            </div>
+            <div class="card-rodape">
+              <span class="badge badge-sucesso">Inscrições abertas</span>
+              <a class="botao botao-primario" href="cadastro.html">Participar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="voluntariado" class="secao secao-alternada">
+      <div class="container">
+        <div class="secao-titulo">
+          <h2>Seja voluntário</h2>
+          <p>Doe seu tempo e seus conhecimentos. Veja como participar:</p>
+        </div>
+        <ol class="grid lista-limpa passos">
+          <li class="col-sm-6 col-lg-3 card card-simples">Escolha o projeto com o qual mais se identifica.</li>
+          <li class="col-sm-6 col-lg-3 card card-simples">Preencha o nosso <a href="cadastro.html">formulário de cadastro</a>.</li>
+          <li class="col-sm-6 col-lg-3 card card-simples">Participe de uma conversa de acolhimento com nossa equipe.</li>
+          <li class="col-sm-6 col-lg-3 card card-simples">Comece a atuar de acordo com a sua disponibilidade.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="doacoes" class="secao">
+      <div class="container">
+        <h2 class="secao-titulo">Faça uma doação</h2>
+
+        <div class="alerta alerta-info" role="note">
+          <p>Toda contribuição é aplicada diretamente nos projetos e prestada em contas no nosso relatório anual.</p>
+        </div>
+
+        <div class="grid">
+          <article id="doacao-financeira" class="col-md-6 card card-simples">
+            <h3>Doação financeira</h3>
+            <ul>
+              <li><strong>PIX:</strong> contato@maosqueajudam.org</li>
+              <li><strong>Transferência:</strong> Banco Exemplo, agência 0001, conta 12345-6</li>
+            </ul>
+            <button class="botao botao-secundario" type="button" data-copiar="contato@maosqueajudam.org">Copiar chave PIX</button>
+          </article>
+
+          <article id="doacao-itens" class="col-md-6 card card-simples">
+            <h3>Doação de itens</h3>
+            <p>
+              Recebemos alimentos não perecíveis, livros e material escolar de segunda a sexta,
+              das 9h às 17h, no endereço informado no rodapé.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="grid">
+        <div class="col-md-6">
+          <h2>ONG Mãos que Ajudam</h2>
+          <p>Transformando a comunidade desde 2010 com educação, alimentação e convivência.</p>
+        </div>
+        <address class="col-md-6">
+          Rua das Flores, 123, Centro, São Paulo - SP<br>
+          E-mail: <a href="mailto:contato@maosqueajudam.org">contato@maosqueajudam.org</a><br>
+          Telefone: <a href="tel:+551130000000">(11) 3000-0000</a>
+        </address>
+      </div>
+      <p class="rodape-direitos"><small>&copy; 2026 ONG Mãos que Ajudam. Todos os direitos reservados.</small></p>
+    </div>
+  </footer>
+
+  <!-- Toast: role="status" faz o leitor de tela anunciar a mensagem sem roubar o foco -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>

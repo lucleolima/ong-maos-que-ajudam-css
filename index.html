@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ONG Mãos que Ajudam: conheça nossa missão, nossos valores e como apoiar a comunidade.">
+  <title>Início | ONG Mãos que Ajudam</title>
+  <!-- Ordem dos estilos: variáveis e base, depois layout, depois componentes -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+  <script src="js/menu.js" defer></script>
+</head>
+<body>
+
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho: identidade da ONG e navegação principal, repetidos em todas as páginas -->
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="index.html">
+        <picture>
+          <source srcset="imagens/logo.svg" type="image/svg+xml">
+          <img src="imagens/logo.png" alt="" width="80" height="80">
+        </picture>
+        ONG Mãos que Ajudam
+      </a>
+
+      <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="botao-menu-icone" aria-hidden="true"></span>
+        Menu
+      </button>
+
+      <nav id="menu-principal" class="menu" aria-label="Navegação principal">
+        <ul class="menu-lista">
+          <li><a class="menu-link" href="index.html" aria-current="page">Início</a></li>
+          <li class="menu-item-com-submenu">
+            <a class="menu-link" href="projetos.html">Projetos</a>
+            <ul class="submenu">
+              <li><a href="projetos.html#projeto-educacao">Aprender Juntos</a></li>
+              <li><a href="projetos.html#projeto-alimentacao">Mesa Solidária</a></li>
+              <li><a href="projetos.html#voluntariado">Seja voluntário</a></li>
+              <li><a href="projetos.html#doacoes">Faça uma doação</a></li>
+            </ul>
+          </li>
+          <li><a class="menu-link" href="cadastro.html">Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal: só pode existir um <main> por página -->
+  <main id="conteudo">
+
+    <div class="hero">
+      <div class="container">
+        <!-- Único h1 da página: o assunto principal -->
+        <h1>Mãos que Ajudam: transformando a comunidade desde 2010</h1>
+        <p>Educação, alimentação e convivência para crianças, jovens e famílias de bairros de baixa renda.</p>
+        <div class="grupo-botoes">
+          <a class="botao botao-claro" href="cadastro.html">Quero ser voluntário</a>
+          <a class="botao botao-contorno botao-contorno-claro" href="projetos.html#doacoes">Fazer uma doação</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="sobre" class="secao">
+      <div class="container grid grid-centro">
+        <div class="col-md-6">
+          <h2>Quem somos</h2>
+          <p>
+            A ONG Mãos que Ajudam é uma organização sem fins lucrativos que atua em bairros
+            de baixa renda, oferecendo apoio educacional, distribuição de alimentos e
+            atividades de convivência para crianças, jovens e famílias.
+          </p>
+        </div>
+        <figure class="col-md-6 card-imagem">
+          <!-- <picture>: o navegador usa o primeiro formato que suportar; o <img> em JPG é o fallback -->
+          <picture>
+            <source srcset="imagens/voluntarios.svg" type="image/svg+xml">
+            <source srcset="imagens/voluntarios.webp" type="image/webp">
+            <img src="imagens/voluntarios.jpg" alt="Ilustração de três voluntários lado a lado" width="600" height="300">
+          </picture>
+          <figcaption>Nossa equipe é formada principalmente por voluntários da própria comunidade.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="missao-visao-valores" class="secao secao-alternada">
+      <div class="container">
+        <h2 class="secao-titulo">Missão, visão e valores</h2>
+
+        <div class="grid">
+          <article class="col-md-6 col-lg-4 card card-simples">
+            <h3>Missão</h3>
+            <p>Promover inclusão social por meio da educação, da alimentação e do fortalecimento de vínculos comunitários.</p>
+          </article>
+
+          <article class="col-md-6 col-lg-4 card card-simples">
+            <h3>Visão</h3>
+            <p>Ser referência regional em projetos sociais transparentes e construídos junto com a comunidade.</p>
+          </article>
+
+          <article class="col-md-12 col-lg-4 card card-simples">
+            <h3>Valores</h3>
+            <ul>
+              <li>Transparência na gestão de recursos</li>
+              <li>Respeito à diversidade</li>
+              <li>Compromisso com a comunidade</li>
+              <li>Voluntariado como forma de cidadania</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="impacto" class="secao">
+      <div class="container">
+        <h2 class="secao-titulo">Nosso impacto</h2>
+        <ul class="grid lista-limpa">
+          <li class="col-sm-6 col-lg-4 card card-numero"><strong>1.200</strong> crianças atendidas no reforço escolar</li>
+          <li class="col-sm-6 col-lg-4 card card-numero"><strong>8 toneladas</strong> de alimentos distribuídos por ano</li>
+          <li class="col-sm-12 col-lg-4 card card-numero"><strong>150</strong> voluntários ativos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="como-ajudar" class="secao secao-alternada">
+      <div class="container texto-centro">
+        <h2>Como você pode ajudar</h2>
+        <p>
+          Você pode doar, divulgar nosso trabalho ou se tornar voluntário.
+          Conheça nossos <a href="projetos.html">projetos sociais</a> ou
+          <a href="cadastro.html">faça seu cadastro</a> para participar.
+        </p>
+        <div class="grupo-botoes grupo-botoes-centro">
+          <a class="botao botao-primario" href="cadastro.html">Fazer meu cadastro</a>
+          <a class="botao botao-contorno" href="projetos.html">Ver projetos</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé: informações institucionais e de contato -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="grid">
+        <div class="col-md-6">
+          <h2>ONG Mãos que Ajudam</h2>
+          <p>Transformando a comunidade desde 2010 com educação, alimentação e convivência.</p>
+        </div>
+        <address class="col-md-6">
+          Rua das Flores, 123, Centro, São Paulo - SP<br>
+          E-mail: <a href="mailto:contato@maosqueajudam.org">contato@maosqueajudam.org</a><br>
+          Telefone: <a href="tel:+551130000000">(11) 3000-0000</a>
+        </address>
+      </div>
+      <p class="rodape-direitos"><small>&copy; 2026 ONG Mãos que Ajudam. Todos os direitos reservados.</small></p>
+    </div>
+  </footer>
+
+</body>
+</html>
